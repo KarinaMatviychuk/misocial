@@ -1,0 +1,208 @@
+@import helpers/vars
+@import helpers/mixins
+ 
+@import  components/header
+@import  components/footer
+
+
+*
+    margin: 0
+    padding: 0
+    font-family: "Maven Pro"
+
+.wrapper
+    column-gap: 50px
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+
+
+main
+    background-color: #f9fafc
+.center-block
+    &__info 
+        text-align: center
+        +flex
+        flex-direction: column
+        &__about
+            padding: 10px
+
+        &__about:first-child
+            margin-top: 115px
+            position: relative
+            display: inline-block
+            font-size: 14px
+            color: #9fa4af
+            font-weight: 700
+
+        &__about:nth-child(2) 
+            font-size: 60px
+            color: #4f4f6f
+            font-weight: 500
+
+        &__about:last-child 
+            +media(425)
+                width: 377px
+            margin-bottom: 115px
+            font-size: 16px
+            color: #9fa4af
+            font-weight: 400
+
+
+.center-before::before
+    content: ""
+    position: absolute
+    width: 25px
+    height: 1px
+    background-color: $hover_button_color
+    top: 18px
+    left: -30px
+
+.center-before::after
+    content: ""
+    position: absolute
+    width: 25px
+    height: 1px
+    background-color: $hover_button_color
+    top: 18px
+    right: -30px
+
+
+
+.center-img
+    margin-bottom: 80px
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+
+.cards
+    margin-bottom: 40px
+    width: 320px
+    height: 550px
+    background-color: #fff
+    border: 1px #d6dbe8 solid
+    border-radius: 30px
+    text-align: center
+
+    &:hover
+        box-shadow: (0 0 46px rgba(204,204,223,0.71))
+
+    &__description__about
+        padding: 20px
+
+        &__hover
+            font-size: 12px
+            text-transform: uppercase
+            text-decoration: none
+            color: #c2c9db
+            font-weight: 700
+            padding: 18px 50px
+            border: 1px #d6dbe8 solid
+            border-radius: 50px
+            box-shadow: (0 0 10.5px rgba(204,204,223,0.5))
+
+
+            &:hover
+                background-color: $hover_button_color
+                color: #fff
+                border: none
+                box-shadow: none
+
+    &__img
+        padding: 35px
+        width: 108px
+        height: 95px
+
+
+.cards__description__about:first-child
+    font-size: 14px
+    text-transform: uppercase
+    color: #9fa4af
+    font-weight: 700
+
+.flex p:first-child
+    position: relative
+    padding: 0
+    font-size: 60px
+    color: #4f4f6f
+    font-weight: 500
+
+    &::before
+        content: "$"
+        position: absolute
+        font-size: 16px
+        left: -12px
+        top: 13px
+
+
+.flex p:nth-child(2)
+    padding: 0
+    font-size: 18px
+    color: #4f4f6f
+    font-weight: 500
+
+.cards__description__about:nth-child(3)
+    margin: 15px
+    font-size: 16px
+    color: #9fa4af
+    font-weight: 400
+
+.cards__description__about:last-child
+    margin-bottom: 10px
+
+.flex
+    display: flex
+    align-items: flex-end
+    justify-content: center
+
+
+       
+
+
+.img-block
+    background: linear-gradient(90deg, rgba(109, 69, 225, .7), rgba(135, 211, 205, .7)), url('../img/Map.png') no-repeat  
+    width: 100%
+    height: 524px
+
+    &__info
+        +flex
+        flex-direction: column
+        justify-content: center
+        text-align: center
+        height: 500px
+
+
+    &__info__about:first-child
+        font-size: 14px
+        text-transform: uppercase
+        color: #fff
+        font-weight: 700
+
+    &__info__about:nth-child(2)
+        font-size: 60px
+        color: #fff
+        font-weight: 500
+
+    &__info__buttons__about
+        font-size: 12px
+        color: #c2c9db
+        font-weight: 700
+        text-align: center
+
+.img-block__info__buttons
+    +media(425)
+        display: flex
+
+    &__about:first-child,
+    &__about:last-child
+        width: 130px
+        padding: 15px
+        background-color: #fff
+        margin: 10px
+        border-radius: 50px
+
+        &:hover
+            background-color: $hover_button_color
+            color: #fff
+
+

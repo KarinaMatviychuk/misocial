@@ -1,0 +1,1 @@
+const burger=document.getElementById("burger"),menubar=document.querySelector(".hide");burger.onclick=function(){menubar.classList.toggle("hide"),burger.classList.toggle("burger-active")};

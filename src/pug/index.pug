@@ -1,0 +1,48 @@
+doctype html
+html(lang="uk")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title misocial
+        link(rel="stylesheet" href="css/styles.css")
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin) 
+        link(href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet")
+    body 
+        include helpers/vars.pug
+        include helpers/mixins.pug
+
+        include components/header.pug
+
+        main
+            div.center-block
+                div.center-block__info
+                    p.center-block__info__about.center-before MISOCIAL
+                    p.center-block__info__about Select a Plan
+                    p.center-block__info__about Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
+
+                div.center-img
+                    div.wrapper
+                        +img('../img/photo-first.png', '0', '/month')
+                        +img('../img/photo-second.png', '29', '/month')
+                        +img('../img/photo-third.png', '49', '/month')
+
+
+            div.img-block
+                div.img-block__info
+                    p.img-block__info__about SOCAL MARKETING & ANALYTICS
+                    p.img-block__info__about Take control of your data
+                    div.img-block__info__buttons
+                        p.img-block__info__buttons__about GET STARTED
+                        p.img-block__info__buttons__about EXPLORE FEATURES
+
+
+        include components/footer.pug
+
+
+            
+
+
+
+    

@@ -1,0 +1,68 @@
+=flex ()
+    display: flex
+    align-items: center
+
+
+
+
+
+
+=dark-theme ()
+    .nav__logo
+        display: inline-flex
+        column-gap: 20px
+        align-items: center
+
+        &__name
+            color: #fff
+            font-size: 30px
+            font-weight: 700
+            font-family: "Maven Pro"
+
+    .main-nav__menu__element__hover
+        color: #fff
+        
+
+
+=light-theme 
+    .nav__logo
+        display: inline-flex
+        column-gap: 20px
+        align-items: center
+
+        &__name
+            color: #37374a
+            font-size: 30px
+            font-weight: 700
+            font-family: "Maven Pro"
+
+    .main-nav__menu__element__hover
+        color: #6a6a77
+
+        &:hover
+            color: #756edc
+
+    .main-nav__menu__element.button .main-nav__menu__element__hover:hover
+        color: #fff
+    
+    .main-nav__menu__element.button a
+        border: 1px #6a6a77 solid
+        padding: 15px
+        border-radius: 25px
+
+        &:hover
+            border-color: #6e45e2
+
+
+
+
+=media($size)
+    @media screen and (min-width: #{$size}px)
+        @content
+
+    
+
+
+
+    
+
