@@ -2,61 +2,61 @@ mixin nav(theme)
     if theme == 'dark'
         div.nav.nav--dark
             div.nav__logo
-                a.nav__logo__hover(href="#") 
-                    img.nav__logo__img(src="img/logo.png", alt="logo")
-                p.nav__logo__name MISOCIAL
+                a.nav__hover(href="#") 
+                    img.nav__img(src="img/logo.png", alt="logo")
+                    | MISOCIAL
             div.main-nav
                 div.burger#burger
                     span
-                ul.main-nav__menu.hide
-                    li.main-nav__menu__element.hover
-                        a.main-nav__menu__element__hover(href="#") Home
-                    li.main-nav__menu__element.hover
-                        a.main-nav__menu__element__hover(href="#") Why MISOCIAL
-                    li.main-nav__menu__element.hover
-                        a.main-nav__menu__element__hover(href="#") Features
-                    li.main-nav__menu__element.hover
-                        a.main-nav__menu__element__hover(href="#") Articles
-                    li.main-nav__menu__element.hover
-                        a.main-nav__menu__element__hover(href="#") Pricing
-                    li.main-nav__menu__element.button
-                        a.main-nav__menu__element__hover(href="#") GET STARTED
+                ul.main-nav__menu
+                    li.main-nav__element.hover
+                        a.main-nav__hover(href="#") Home
+                    li.main-nav__element.hover
+                        a.main-nav__hover(href="#") Why MISOCIAL
+                    li.main-nav__element.hover
+                        a.main-nav__hover(href="#") Features
+                    li.main-nav__element.hover
+                        a.main-nav__hover(href="#") Articles
+                    li.main-nav__element.hover
+                        a.main-nav__hover(href="#") Pricing
+                    li.main-nav__element.button
+                        a.main-nav__hover(href="#") GET STARTED
                 script(src="js/scripts.js")
     else
          div.nav.nav--light
             div.nav__logo
-                a(href="#") 
-                    img.nav__logo__img(src="img/logo.png", alt="logo")
-                p.nav__logo__name MISOCIAL
+                a.nav__hover(href="#") 
+                    img.nav__img(src="img/logo.png", alt="logo")
+                    | MISOCIAL
             div.main-nav
                 ul.main-nav__menu
-                    li.main-nav__menu__element.hover
-                        a.main-nav__menu__element__hover(href="#") Home
-                    li.main-nav__menu__element.hover
-                        a.main-nav__menu__element__hover(href="#") Why MISOCIAL
-                    li.main-nav__menu__element.hover
-                        a.main-nav__menu__element__hover(href="#") Features
-                    li.main-nav__menu__element.hover
-                        a.main-nav__menu__element__hover(href="#") Articles
-                    li.main-nav__menu__element.hover
-                        a.main-nav__menu__element__hover(href="#") Pricing
-                    li.main-nav__menu__element.button
-                        a.main-nav__menu__element__hover(href="#") GET STARTED
+                    li.main-nav__element.hover
+                        a.main-nav__hover(href="#") Home
+                    li.main-nav__element.hover
+                        a.main-nav__hover(href="#") Why MISOCIAL
+                    li.main-nav__element.hover
+                        a.main-nav__hover(href="#") Features
+                    li.main-nav__element.hover
+                        a.main-nav__hover(href="#") Articles
+                    li.main-nav__element.hover
+                        a.main-nav__hover(href="#") Pricing
+                    li.main-nav__element.button
+                        a.main-nav__hover(href="#") GET STARTED
                 //- script(src="js/scripts.js")
 
 
 
 mixin img (imgSrc, price, month)
-    figure.cards 
+    figure.cards#id 
         img.cards__img(src=imgSrc, alt="smth")
         figcaption.cards__description
-            p.cards__description__about personal
+            p.cards__about personal
             .flex
-                p.cards__description__about= price
-                p.cards__description__about= month
-            p.cards__description__about Lorem ipsum dolor sit amet. sed do eiusmod tempor incididunt ut. Labore et dolore magna aliqua quis nostrud exercitation ullamco laboris. Ea commodo consequat.
-            p.cards__description__about 
-                a.cards__description__about__hover(href="#") select plan
+                p.cards__about= price
+                p.cards__about= month
+            p.cards__about Lorem ipsum dolor sit amet. sed do eiusmod tempor incididunt ut. Labore et dolore magna aliqua quis nostrud exercitation ullamco laboris. Ea commodo consequat.
+            p.cards__about 
+                a.cards__about--hover(href="#") select plan
     
 
 

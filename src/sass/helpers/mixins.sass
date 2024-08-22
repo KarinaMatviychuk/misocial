@@ -13,13 +13,17 @@
         column-gap: 20px
         align-items: center
 
-        &__name
-            color: #fff
-            font-size: 30px
-            font-weight: 700
-            font-family: "Maven Pro"
+    .nav__hover
+        +flex
+        color: #fff
+        font-size: 30px
+        letter-spacing: 6px
+        font-weight: 700
+        font-family: "Maven Pro"
+        text-decoration: none
+        column-gap: 15px
 
-    .main-nav__menu__element__hover
+    .main-nav__hover
         color: #fff
         
 
@@ -30,24 +34,28 @@
         column-gap: 20px
         align-items: center
 
-        &__name
-            color: #37374a
-            font-size: 30px
-            font-weight: 700
-            font-family: "Maven Pro"
+    .nav__hover
+        +flex
+        color: #37374a
+        font-size: 30px
+        letter-spacing: 6px
+        font-weight: 700
+        font-family: "Maven Pro"
+        text-decoration: none
+        column-gap: 15px
 
-    .main-nav__menu__element__hover
+    .main-nav__hover
         color: #6a6a77
 
         &:hover
             color: #756edc
 
-    .main-nav__menu__element.button .main-nav__menu__element__hover:hover
+    .main-nav__element.button .main-nav__hover:hover
         color: #fff
     
-    .main-nav__menu__element.button a
+    .main-nav__element.button a
         border: 1px #6a6a77 solid
-        padding: 15px
+        padding: 15px 20px
         border-radius: 25px
 
         &:hover

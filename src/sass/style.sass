@@ -10,6 +10,9 @@
     padding: 0
     font-family: "Maven Pro"
 
+html 
+    scroll-behavior: smooth
+
 .wrapper
     column-gap: 50px
     display: flex
@@ -24,29 +27,29 @@ main
         text-align: center
         +flex
         flex-direction: column
-        &__about
-            padding: 10px
+    &__about
+        padding: 10px
 
-        &__about:first-child
-            margin-top: 115px
-            position: relative
-            display: inline-block
-            font-size: 14px
-            color: #9fa4af
-            font-weight: 700
+    &__about:first-child
+        margin-top: 115px
+        position: relative
+        display: inline-block
+        font-size: 14px
+        color: #9fa4af
+        font-weight: 700
 
-        &__about:nth-child(2) 
-            font-size: 60px
-            color: #4f4f6f
-            font-weight: 500
+    &__about:nth-child(2) 
+        font-size: 60px
+        color: #4f4f6f
+        font-weight: 500
 
-        &__about:last-child 
-            +media(425)
-                width: 377px
-            margin-bottom: 115px
-            font-size: 16px
-            color: #9fa4af
-            font-weight: 400
+    &__about:last-child 
+        +media(425)
+            width: 377px
+        margin-bottom: 115px
+        font-size: 16px
+        color: #9fa4af
+        font-weight: 400
 
 
 .center-before::before
@@ -87,10 +90,10 @@ main
     &:hover
         box-shadow: (0 0 46px rgba(204,204,223,0.71))
 
-    &__description__about
+    &__about
         padding: 20px
 
-        &__hover
+        &--hover
             font-size: 12px
             text-transform: uppercase
             text-decoration: none
@@ -114,7 +117,7 @@ main
         height: 95px
 
 
-.cards__description__about:first-child
+.cards__about:first-child
     font-size: 14px
     text-transform: uppercase
     color: #9fa4af
@@ -141,13 +144,13 @@ main
     color: #4f4f6f
     font-weight: 500
 
-.cards__description__about:nth-child(3)
+.cards__about:nth-child(3)
     margin: 15px
     font-size: 16px
     color: #9fa4af
     font-weight: 400
 
-.cards__description__about:last-child
+.cards__about:last-child
     margin-bottom: 10px
 
 .flex
@@ -169,32 +172,34 @@ main
         flex-direction: column
         justify-content: center
         text-align: center
-        height: 500px
+        height: 524px
 
 
-    &__info__about:first-child
+    &__about:first-child
         font-size: 14px
         text-transform: uppercase
         color: #fff
         font-weight: 700
 
-    &__info__about:nth-child(2)
-        font-size: 60px
+    &__about:nth-child(2)
+        +media(768)
+            font-size: 60px
+        font-size: 45px
         color: #fff
         font-weight: 500
 
-    &__info__buttons__about
+    &__buttons--about
         font-size: 12px
         color: #c2c9db
         font-weight: 700
         text-align: center
 
-.img-block__info__buttons
+.img-block__buttons
     +media(425)
         display: flex
 
-    &__about:first-child,
-    &__about:last-child
+    &--about:first-child,
+    &--about:last-child
         width: 130px
         padding: 15px
         background-color: #fff
