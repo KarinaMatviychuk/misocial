@@ -79,9 +79,11 @@ main
     flex-wrap: wrap
 
 .cards
-    margin-bottom: 40px
-    width: 320px
+    +media(375)
+        width: 320px
+    width: 300px
     height: 550px
+    margin-bottom: 40px
     background-color: #fff
     border: 1px #d6dbe8 solid
     border-radius: 30px
